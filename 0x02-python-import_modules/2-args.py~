@@ -1,0 +1,8 @@
+#!/usr/bin/python3
+import sys
+if len(sys.argv) == 0:
+    print("0 arguments.")
+else:
+    print("{} argument:".format(len(sys.argv)))
+    for arg, index in sys.argv:
+        print("{}: {}:".format(index, arg))
