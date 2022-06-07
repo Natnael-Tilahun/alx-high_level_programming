@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 import sys
-if len(sys.argv) == 0:
+if len(sys.argv) == 1:
     print("0 arguments.")
-else:
-    print("{} argument:".format(len(sys.argv)))
-    for index in range(len(sys.argv)):
-        print("{}: {}:".format(index, sys.argv[index]))
+elif len(sys.argv) > 1:
+    print("{} argument:".format(len(sys.argv) - 1))
+    for index in range(1, len(sys.argv)):
+        print("{}: {}".format(index, sys.argv[index]))
